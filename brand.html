@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<title>브랜드이름_목업</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<style>
+			*{margin:0; padding:0;}
+			a{text-decoration:none;
+				color:inherit;}
+			img{
+				display: block;
+				
+			}
+			.fixed_box{position:fixed;
+				bottom:40px;
+				right:30px;
+				width:40px;}
+			#top img{
+					width: 100%;
+				}
+			.home_btn, .top_btn{
+				display: inline-block;
+				width:55px;
+				line-height: 55px;
+				background-color: #1d2323;
+				text-align: center;
+				border-radius:50%;
+				margin-bottom:5px;
+				color:#fff;
+				transition: all 0.5s;
+			}
+			.fixed_box a:hover{
+				background-color: #1d2323;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<img src="./guide2_img/1.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/2.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/3.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/4.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/5.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/6.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/7.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/8.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/9.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/10.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/11.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/12.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/13.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+			<img src="./guide2_img/14.jpg" alt="bx이미지"><!--가이드 이미지 경로 지정하기-->
+
+			
+		</div>
+		<div class="fixed_box">
+			<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+				TOP
+			</a>
+			<a href="포트폴리오사이트주소" target="_blank" class="home_btn">
+				Home
+			</a>
+		</div>
+
+
+		<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script>
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 500);//움직이는 시간 조정
+				return false;
+				}
+				}
+				});
+				});
+		</script>
+		<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+	</body>
+</html>

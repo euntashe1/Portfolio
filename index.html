@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="정은희 UX/UI 디자이너의 브랜드 웹디자인 포트폴리오">
+  <title>정은희 UX/UI 포트폴리오</title>
+  <!-- =========================
+       Favicons
+  ========================= -->
+  <link rel="icon" type="image/png" href="eh-visual-bloom-favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- =========================
+       Fonts
+  ========================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playball&display=swap" rel="stylesheet">
+
+  <!-- =========================
+       Vendor CSS
+  ========================= -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- =========================
+       Custom CSS
+  ========================= -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="hero-view">
+  <!-- ==================================================
+       01. OPENING
+       홈페이지에 처음 들어왔을 때 나오는 블루 타이포 화면
+  ================================================== -->
+  <div class="opening-intro" aria-hidden="true">
+    <div class="opening-intro-mark"><span class="e">E</span><span class="h">H</span></div>
+    <div class="opening-intro-statement">
+      <span class="opening-intro-line"><span>DESIGNING</span></span>
+      <span class="opening-intro-line"><span>MOMENTS,</span></span>
+      <span class="opening-intro-line"><span>CREATING</span></span>
+      <span class="opening-intro-line"><span>EXPERIENCES.</span></span>
+    </div>
+  </div>
+
+  <!-- 헤더와 전체 메뉴 -->
+  <header class="header"><a class="logo" href="#top">Jeong Eunhee</a><button class="menu-btn"
+      aria-label="전체 메뉴 열기"><span></span><span></span></button></header>
+  <nav class="menu-panel" aria-hidden="true">
+    <button class="menu-close" aria-label="전체 메뉴 닫기">✕</button>
+    <div class="menu-main"><a href="#work"><span>Selected Work</span></a><a href="#approach"><span>Approach</span></a><a
+        href="#about"><span>About</span></a><a href="#contact"><span>Contact</span></a></div>
+    <div class="menu-meta"><span>UX/UI · BRAND WEB DESIGN</span><span>BUSAN, KOREA · 2026</span><span>브랜드의 감각을 경험으로
+        설계합니다.</span></div>
+  </nav>
+
+  <main id="top">
+    <!-- ==================================================
+         02. MAIN HERO VIDEO
+         오프닝 다음에 나오는 메인 동영상
+    ================================================== -->
+    <!-- ★ 오프닝이 끝난 뒤 바로 이 메인 영상이 나옵니다. -->
+    <section class="hero">
+      <div class="hero-fallback"></div>
+      <video muted autoplay playsinline loop preload="metadata" aria-label="Visual Bloom 포트폴리오 메인 배경 영상">
+        <source src="main-demo(8).mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- 메인 영상 아래의 디자인 키워드 Marquee -->
+    <section class="portfolio-marquee" aria-label="디자인 포트폴리오 키워드">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">UX/UI DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND WEB DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">VISUAL DIRECTION</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">INTERACTION DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">RESPONSIVE WEB</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">DESIGNING DIGITAL EXPERIENCES</span><span class="marquee-symbol">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item">UX/UI DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND WEB DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">VISUAL DIRECTION</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">INTERACTION DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">RESPONSIVE WEB</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">DESIGNING DIGITAL EXPERIENCES</span><span class="marquee-symbol">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         03. PORTFOLIO INTRO
+         Ideas become digital experiences 영역
+         ★ 주요 문구는 아래 HTML에서 바로 수정할 수 있습니다.
+    ================================================== -->
+    <section class="intro portfolio-intro" id="approach">
+      <div class="intro-showcase-media fade-up">
+        <video class="intro-showcase-video" autoplay muted loop playsinline preload="metadata" aria-label="포트폴리오 소개 영상">
+          <source src="upload_202608121053.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="portfolio-intro-copy">
+        <div class="intro-label">01 — PORTFOLIO INTRODUCTION</div>
+        <div class="typing-title-frame">
+          <h2 class="intro-motion-title" aria-label="Ideas become digital experiences."><span
+              class="intro-motion-line ideas-line">Ideas become</span><span
+              class="intro-motion-line digital-line">digital</span><span
+              class="intro-motion-line experiences-line">experiences.</span></h2>
+        </div>
+        <p class="fade-up">브랜드가 가진 고유한 감정과 이야기를 발견하고, 사용자 흐름과 인터랙션으로 확장합니다. 웹디자인, UX/UI, 브랜딩, 비주얼 디자인을 하나의 경험으로 연결해 보기
+          좋은 화면을 넘어 오래 기억되는 디지털 장면을 만듭니다.</p>
+        <div class="portfolio-intro-meta fade-up"><span>UX/UI DESIGN</span><span>BRAND WEB DESIGN</span><span>VISUAL
+            DIRECTION</span><span>RESPONSIVE WEB</span></div>
+      </div>
+    </section>
+
+    <!-- Portfolio Introduction 다음에 반복되는 동일한 디자인 키워드 Marquee -->
+    <section class="portfolio-marquee" aria-label="디자인 포트폴리오 키워드">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">UX/UI DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND WEB DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">VISUAL DIRECTION</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">INTERACTION DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">RESPONSIVE WEB</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">DESIGNING DIGITAL EXPERIENCES</span><span class="marquee-symbol">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item">UX/UI DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND WEB DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">VISUAL DIRECTION</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">INTERACTION DESIGN</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">RESPONSIVE WEB</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">BRAND EXPERIENCE</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">CREATIVE DEVELOPMENT</span><span class="marquee-symbol">✦</span>
+          <span class="marquee-item">DESIGNING DIGITAL EXPERIENCES</span><span class="marquee-symbol">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         04. IDEA MOTION SECTION
+         아이디어가 경험으로 / 피어나는 순간
+         ★ 제목은 .motion-line 안의 글자를 수정하세요.
+    ================================================== -->
+    <!--<section class="objects">
+
+      <div class="objects-bg" aria-hidden="true"></div>
+
+      <div class="objects-stage">
+        <div class="glow"></div>
+        <div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><div class="orb four"></div>
+        <h2 class="motion-title" aria-label="아이디어가 경험으로 피어나는 순간"><small>FROM IDEA TO INTERACTION</small><span class="motion-line line-1" aria-hidden="true"><span class="idea-typing-part idea-before"></span><span class="idea-typing-part idea-typing-highlight"></span><span class="idea-typing-part idea-join"></span></span><span class="motion-line line-2" aria-hidden="true"><span class="idea-typing-part idea-after"></span></span></h2>
+      </div>
+    </section>-->
+
+    <!-- ==================================================
+         05. FEATURED PROJECTS
+    ================================================== -->
+    <section class="projects" id="work">
+      <div class="project-head">
+        <h2>Featured<br>Projects</h2>
+        <p>브랜드의 방향성과 사용자 경험을 바탕으로,<br><strong>전략부터 비주얼과 인터랙션까지 프로젝트별로 구체화했습니다.</strong></p>
+      </div>
+      <div class="project-stack">
+        <article class="project-scroll-item"
+          style="--bg:#8d5f5f;--art:linear-gradient(145deg,#fff4f2,#eb9190 52%,#8d5f5f)">
+          <div class="project-sticky project-slide">
+            <div class="project-art project-art-video"><video class="project-video" autoplay muted loop playsinline
+                preload="metadata" aria-label="Aurelia Muse 프로젝트 영상">
+                <source src="aac013e5-9bba-467a-a00b-9e0370b90d79.mp4" type="video/mp4">
+              </video></div>
+            <div class="project-info">
+              <div class="project-no">01 / BRAND COMMERCE</div>
+              <h3>Aurelia Muse</h3>
+              <p>핑크빛 티타임과 제작자의 손길을 온라인 경험으로 확장한 프리미엄 세라믹 브랜드 웹사이트. 탐색, 구매, 클래스 예약을 하나의 감성 흐름으로 연결했습니다.</p>
+              <div class="project-tags">
+                <span><a href="./brand.html" target="_blank">Branding</a></span>
+                <span><a href="./brand.html" target="_blank">Mockup</a></span>
+                <span><a href="./brand.html" target="_blank">WebGuide</a></span>
+              </div><a class="view-link" href="https://euntashe1.github.io/AureliaMuse/" target="_blank"
+                rel="noreferrer">VIEW Website <b>↗</b></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-scroll-item project-visual-right"
+          style="--bg:#4e73b9;--art:linear-gradient(145deg,#eef7ff,#8eb9ff 48%,#a58ed4)">
+          <div class="project-sticky project-slide">
+            <div class="project-art project-art-video project-video-visual visual-bloom-video"><video
+                class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Morphé 프로젝트 영상">
+                <source src="1e1f7b3b-6764-4a18-bd78-77a2021cc6f4.mp4" type="video/mp4">
+              </video></div>
+            <div class="project-info">
+              <div class="project-no">02 / VISUAL IDENTITY</div>
+              <h3>Morphé</h3>
+              <p>미래적 이미지와 정제된 그래픽 연출을 결합해 브랜드의 시선을 강렬하게 전달하는 비주얼 아이덴티티 프로젝트. 브랜드 무드, 아트 디렉션, 영상 장면을 하나의 인상적인 경험으로
+                연결했습니다.</p>
+              <div class="project-tags"><span>Art Direction</span><span>Motion</span><span>Brand Film</span><span>Visual
+                  Identity</span></div><a class="view-link" href="#contact">VIEW CASE STUDY <b>→</b></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-scroll-item" style="--bg:#C56A3A;--art:#C56A3A">
+          <div class="project-sticky project-slide">
+            <div class="project-art project-art-video sweet-salty-video"><video class="project-video" autoplay muted
+                loop playsinline preload="metadata" aria-label="SWEET & SALTY DAN과 JJAN 듀오 캐릭터 브랜딩 프로젝트 영상">
+                <source src="Character_brand_intro_animation_202608131044.mp4" type="video/mp4">
+              </video></div>
+            <div class="project-info">
+              <div class="project-no">03 / CHARACTER BRANDING</div>
+              <h3>Sweet &amp; Salty</h3>
+              <p>상반된 성격의 DAN과 JJAN을 하나의 듀오 캐릭터 IP로 확장한 브랜딩 프로젝트. 실루엣, 성격, 컬러와 모션을 통해 두 캐릭터의 관계성과 브랜드 개성을 시각화했습니다.</p>
+              <div class="project-tags"><span>Character IP</span><span>Branding</span><span>Motion</span><span>Art
+                  Direction</span></div><a class="view-link" href="#contact">VIEW CASE STUDY <b>→</b></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-scroll-item project-visual-right"
+          style="--bg:#4e73b9;--art:linear-gradient(145deg,#eef7ff,#8eb9ff 48%,#a58ed4)">
+          <div class="project-sticky project-slide">
+            <div class="project-art">
+              <div class="art-word">Visual Bloom</div>
+            </div>
+            <div class="project-info">
+              <div class="project-no">04 / VISUAL IDENTITY</div>
+              <h3>Visual Bloom</h3>
+              <p>하늘, 바다, 빛의 기억을 유리처럼 투명한 그래픽과 모션으로 시각화한 개인 아이덴티티 프로젝트. 웹과 영상이 하나의 계절처럼 이어집니다.</p>
+              <div class="project-tags"><span>Art Direction</span><span>Motion</span><span>3D Visual</span></div><a
+                class="view-link" href="#contact">VIEW CASE STUDY <b>→</b></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         06. 360 DEGREE SECTION
+         360 숫자 롤링 영역
+         ★ 헤더와 설명 문구는 아래 HTML에서 수정하세요.
+    ================================================== -->
+    <!--    <section class="legacy">
+
+      <div class="legacy-bg" aria-hidden="true"><div class="legacy-mask"></div></div>
+
+      <div class="legacy-stage">
+        <div class="legacy-moving-objects" aria-hidden="true"><div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div></div>
+        <div class="legacy-content">
+          <div class="legacy-kicker">DESIGN IN EVERY DIRECTION</div>
+          <div class="big degree-number" aria-label="360도"><span class="digit-window digit-window-3" aria-hidden="true"><span class="digit-reel digit-reel-3"><span class="digit-value">3</span></span></span><span class="digit-window digit-window-6" aria-hidden="true"><span class="digit-reel digit-reel-6"><span class="digit-value">6</span></span></span><span class="digit-window digit-window-0" aria-hidden="true"><span class="digit-reel digit-reel-0"><span class="digit-value">0</span></span></span><span class="degree-mark" aria-hidden="true">°</span></div>
+          <p>브랜드의 방향을 바라보는 시선부터<br>사용자가 경험하는 모든 순간까지 설계합니다.</p>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- ==================================================
+         07. SHORT-FORM WORKS
+    ================================================== -->
+    <section class="shortform-section" id="shortform">
+      <div class="shortform-inner">
+        <div class="shortform-header">
+          <div>
+            <span class="shortform-index">05 · MOTION & SHORT-FORM</span>
+            <h2>Short-form<span>Works.</span></h2>
+          </div>
+          <p class="shortform-copy">브랜드의 분위기와 메시지를 짧은 영상 안에 담아 모션, 편집, 비주얼 디렉션으로 확장한 포트폴리오 작업입니다.</p>
+        </div>
+        <div class="swiper shortsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide shortform-card video-card" data-video-url="./video/live/shorts_1.mp4"
+              data-video-type="vertical">
+              <div class="shortform-media">
+                <video src="./video/live/shorts_1.mp4" muted playsinline preload="metadata"></video>
+                <div class="shortform-play" aria-hidden="true"><span>&#9654;</span></div>
+              </div>
+              <div class="shortform-card-info"><span>01</span>
+                <h3>Brand Motion</h3>
+                <p>Art Direction &middot; Motion</p>
+              </div>
+            </div>
+            <div class="swiper-slide shortform-card video-card" data-video-url="./video/live/shorts_2.mp4"
+              data-video-type="vertical">
+              <div class="shortform-media">
+                <video src="./video/live/shorts_2.mp4" muted playsinline preload="metadata"></video>
+                <div class="shortform-play" aria-hidden="true"><span>&#9654;</span></div>
+              </div>
+              <div class="shortform-card-info"><span>02</span>
+                <h3>Visual Campaign</h3>
+                <p>Brand Film &middot; Editing</p>
+              </div>
+            </div>
+            <div class="swiper-slide shortform-card video-card" data-video-url="./video/live/shorts_3.mp4"
+              data-video-type="vertical">
+              <div class="shortform-media">
+                <video src="./video/live/shorts_3.mp4" muted playsinline preload="metadata"></video>
+                <div class="shortform-play" aria-hidden="true"><span>&#9654;</span></div>
+              </div>
+              <div class="shortform-card-info"><span>03</span>
+                <h3>Mood in Motion</h3>
+                <p>Visual Direction &middot; Short-form</p>
+              </div>
+            </div>
+            <div class="swiper-slide shortform-card video-card" data-video-url="./video/live/shorts_4.mp4"
+              data-video-type="vertical">
+              <div class="shortform-media">
+                <video src="./video/live/shorts_4.mp4" muted playsinline preload="metadata"></video>
+                <div class="shortform-play" aria-hidden="true"><span>&#9654;</span></div>
+              </div>
+              <div class="shortform-card-info"><span>04</span>
+                <h3>Digital Scene</h3>
+                <p>Motion &middot; Creative Edit</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================================
+         08. ABOUT
+    ================================================== -->
+    <section class="about" id="about">
+      <h2 class="typing-title" aria-label="Design with clarity & emotion."><span class="typing-line"
+          data-typing-text="Design with"><span class="typing-output" aria-hidden="true"></span></span><span
+          class="typing-line" data-typing-text="clarity &"><span class="typing-output"
+            aria-hidden="true"></span></span><span class="typing-line emotion" data-typing-text="emotion."><span
+            class="typing-output" aria-hidden="true"></span></span></h2>
+      <div class="about-copy">
+        <p class="lead">안녕하세요. 브랜드의 분위기를 사용자에게 닿는 경험으로 설계하는 UX/UI 디자이너 정은희입니다.</p>
+        <p>오랜 시각 디자인 감각을 바탕으로 리서치, 정보 구조, 인터페이스, 모션을 유기적으로 연결합니다. 보기 좋은 화면을 넘어 이해하기 쉽고 행동하기 편한 웹을 지향합니다.</p>
+        <div class="skills-grid">
+          <div class="skill-row"><span>UX Strategy & Information Architecture</span><b>01</b></div>
+          <div class="skill-row"><span>UI Design & Design System</span><b>02</b></div>
+          <div class="skill-row"><span>Brand Identity & Art Direction</span><b>03</b></div>
+          <div class="skill-row"><span>HTML · CSS · JavaScript · Motion</span><b>04</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         09. CONTACT
+    ================================================== -->
+    <section class="contact" id="contact">
+      <div>
+        <div class="eyebrow">AVAILABLE FOR NEW OPPORTUNITIES</div>
+        <h2>Let’s make<span>it bloom.</span></h2>
+      </div>
+      <div class="contact-bottom">
+        <div class="contact-links"><a href="mailto:hello@example.com">EMAIL ↗</a><a href="https://github.com/euntashe1"
+            target="_blank" rel="noreferrer">GITHUB ↗</a><a href="#top">BACK TO TOP ↑</a></div>
+        <div class="footer-note">© 2026 EUNHEE JUNG · UX/UI PORTFOLIO</div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="quick">
+    <div class="quick-links"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#top">TOP</a></div><button
+      class="quick-toggle" aria-label="퀵 메뉴 열기">+</button>
+  </aside>
+  <button class="notice" type="button">PORTFOLIO UPDATE · 2026</button>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="notice-title" aria-hidden="true">
+    <div class="modal-card">
+      <div class="eyebrow">NOTICE</div>
+      <h3 id="notice-title">새로운 경험이 피어나는 순간</h3>
+      <p>정은희의 2026 UX/UI 포트폴리오입니다. 브랜드 전략, 웹 인터페이스, 모션 디자인을 하나의 사용자 경험으로 연결했습니다.</p><button type="button">포트폴리오
+        보기</button>
+    </div>
+  </div>
+
+  <div id="videoModal" class="shortform-modal" aria-hidden="true">
+    <div id="modalContainer" class="shortform-modal-body">
+      <button class="shortform-close" type="button">CLOSE</button>
+      <div id="videoPlayerArea"></div>
+    </div>
+  </div>
+  <!-- =========================
+       Vendor JavaScript
+  ========================= -->
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.13.3/jquery-ui.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- =========================
+       Custom JavaScript
+  ========================= -->
+  <script src="./assets/js/main.js"></script>
+  
+</body>
+
+</html>
